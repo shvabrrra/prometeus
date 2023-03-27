@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Домашня робота</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__content">
+                    <a class="header__icon" href="">
+                        <img src='images/icon.svg' alt='icon'>
+                    </a>
+                    <h1>Армiя дронiв</h1> <!--english letter 'i'-->
+                    <button class="button button__header">Зробити внесок</button>
+                </div>
+                <img class="header__dron" src="images/header_dron.png" alt="dron">
+            </div>
+          </header>
+          <main>
+            <section class="main">
+              <h2>Мрієте, щоб ЗСУ стали ще сильніше, а палало аж до москви</h2>
+              <p>Кожен день наближає Україну до перемоги.</p>
+              <p>Наскільки довгим буде цей шлях - залежить від нас.</p>
+              <p>Допоможіть зібрати кошти на дрони. Хлопці обіцяють - результат Вам сподобається! Адже в кожному з нас єдине бажання, щоб зло на нашій землі було знищено. Ваш внесок важливий. Зробіть його просто зараз!</p>
+              <div class="main__images">
+                <img src="images/dron_1.jpg" alt="dron 1">
+                <img src="images/dron_2.jpg" alt="dron 2">
+                <img src="images/dron_3.jpg" alt="dron 3">
+              </div>
+            </section>
+            <section class="pay">
+              <h2>Зробити благодiйний внесок</h2> <!--english i-->
+              <div class="pay__form">
+                <form action="/">
+                    <div class="pay__fonds">
+                      <p class='func'>Оберiть фонд</p>
+                      <label>
+                        <input type="radio" name="foundation" value="SerhiiPrytulaFoundation">
+                        <span class='foundation'>Повернись живим</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="foundation" value="ComeBackAliveFoundation" checked>
+                        <span class='foundation'>Фонд Сергiя Притули</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="foundation" value="NBUAccount">
+                        <span class='foundation'>Рахунок НБУ</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="foundation" value="UAID">
+                        <span class='foundation'>UAID</span>
+                      </label>
+                    </div>
+                    <div class="pay__card">
+                      	    <label class='func'>
+                                Введіть номер картки*
+                                <input type="text" required name="cardNumber" placeholder="XXXX XXXX XXXX XXXX">
+                            </label>
+                            <div>
+                            	<div class='inline'>
+                                	<label class='func'>
+                                        Термін дії*
+                                    	<input type="text" required name="cardExpire" placeholder="XX/XX">
+                                	</label>
+                                	<label class='func'>
+                                    	CVV*
+                                    	<input type="text" required name="cardCVV" placeholder="XXX">
+                                	</label>
+                                </div>
+                                <label class='func'>
+                                Введіть ім'я на картці
+                                <input type="text" required name="cardOwner" placeholder="Ваше iм'я">
+                            	</label>
+                            	<button class="button button__bottom" type="submit">Підтвердити внесок</button> 
+                                </div>
+                       
+                 	 </div>
+                  </form>
+              </div>
+            </section>
+          </main>
+          <footer>
+            <p>Створено як домашня робота з курсу "Знайомство з IT: тестдрайв професiй" від Prometheus. НЕ ПРИЗНАЧЕНИЙ ДЛЯ ЗБОРУ КОШТIВ.</p>
+            <p>Деркачов Борислав</p>
+          </footer>
+    </div>
+</body>
+</html>

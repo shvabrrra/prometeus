@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "RubikR";
+    src: url("fonts/Rubik-Regular.ttf");
+}
+@font-face {
+    font-family: "RubikB";
+    src: url("fonts/Rubik-Bold.ttf");
+}
+@font-face {
+    font-family: "JostR";
+    src: url("fonts/Jost-Regular.ttf");
+}
+@font-face {
+    font-family: "JostM";
+    src: url("fonts/Jost-Medium.ttf");
+}
+@font-face {
+    font-family: "JostEB";
+    src: url("fonts/Jost-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "JostB";
+    src: url("fonts/Jost-Bold.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "RubikR";
+}
+.container {
+    text-align: center;
+    min-width: 100%;
+    margin: 0 auto;
+}
+.button {
+    height: 60px;
+    width: 202px;
+    color: #fff;
+    font-family: JostM;
+    font-size: 24px;
+    background-color: #113B80;
+    border-radius: 50px;
+    border-color: transparent;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(18, 86, 155, 0.8);
+}
+.button:active {
+    background-color: rgba(18, 86, 155, 0.7);
+}
+.button__header {
+    width: 220px;
+}
+.button__bottom {
+    margin-top: 31px;
+    width: 443px;
+}
+.header {
+    height: 500px;
+    display: flex;
+    background-color: #CFCFCF;
+    padding: 0 94px;
+    margin: 0 auto;
+}
+.header__container {
+    display: flex;
+    width: 1075px;
+    margin: 0 auto;
+}
+.header__content {
+    width: 445px;
+    text-align: left;
+    margin-top: 44px;
+}
+.header__icon {
+    display: block;
+    margin-bottom: 100px;
+    margin-left: -80px;
+}
+.header__content h1 {
+    width: 280px;
+    font-family: "JostEB";
+    font-size: 80px;
+    color: #141414;
+    line-height: 88%;
+    letter-spacing: 0px;
+    margin-bottom: 46px;
+    margin-top: -70px;
+}
+.header__dron {
+    margin-left: 100px;
+    height: 437px;
+}
+.main {
+    position: relative;
+    height: 580px;
+    padding: 63px 94px 0 94px;
+    margin: 0 auto;
+    margin-bottom: -50px;
+}
+.main h2 {
+    margin-bottom: 25px;
+    font-family: 'RubikB';
+    font-size: 30px;
+    color: #141414;
+    letter-spacing: 0.5px;
+}
+.main p {
+    display: block;
+    width: 710px;
+    font-size: 20px;
+    color: rgb(33, 32, 51);
+    margin-left: auto;
+    margin-right: auto;
+}
+.main p:last-of-type {
+    margin-bottom: 52px;
+}
+.main__images {
+    display: flex;
+    justify-content: center;
+}
+.main__images img {
+    height: 203px;
+    width: 345px;
+    border-radius: 12px;
+}
+.main__images img:not(:last-of-type) {
+    margin-right: 21px;
+}
+.main__images::before {
+    position: absolute;
+    content: "";
+    background-color: #CFCFCF;
+    height: 87px;
+    width: 100%;
+    left: 0;
+    bottom: 138px;
+    z-index: -1;
+}
+.pay {
+    height: 370px;
+    margin: 0 auto;
+    padding: 0 94px;
+    margin-bottom: 200px;
+}
+.pay h2 {
+    font-family: "JostB";
+    text-align: center;
+    padding-left: 10px;
+    font-size: 58px;
+    color: #141414;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+.pay__form form {
+    display: flex;
+    width: 822px;
+    margin: 0 auto;
+}
+.pay__fonds {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.pay__fonds label {
+    position: relative;
+    height: 55px;
+    width: 400px;
+    line-height: 50px;
+    color: #141414;
+}
+.pay__fonds label {
+    margin-bottom: 32px;
+}
+input {
+    font-size: 18px;
+    padding-left: 24px;
+}
+input[type=radio] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+input[type=radio] ~ span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+    background-color: transparent;
+    border: solid #141414 2px;
+    padding: 0 24px;
+    cursor: pointer;
+}
+input[type=radio]:checked ~ span {
+    background-color: rgb(18, 86, 155, 0.2);
+}
+input[type=radio] ~ span::after {
+    content: "";
+}
+input[type=radio]:checked ~ span::after {
+    content: "✓";
+    right: 30px;
+    position: absolute;
+}
+.pay__card {
+    margin-left: 12px;
+    margin-right: 16px;
+    align-items: start;
+    justify-content: space-between; 
+}
+.pay__card label > input {
+    height: 55px;
+    width: 100%;
+    border-radius: 12px;
+    border: solid #141414 2px;
+}
+.pay__card > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pay__card label {
+    text-align: left;
+    width: 443px;
+}
+.inline {
+    display: flex;
+    flex-direction: row;
+    width: 443px;
+}
+.inline label:first-of-type {
+    margin-right: 20px;
+}
+.func {
+text-align: left;
+font-family: 'JostM';
+font-size: 21px;
+color: #141414;
+}
+.foundation {
+font-family: 'JostM';
+font-size: 24px;
+color: #141414;
+}
+footer {
+    height: 163px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #EE1010;
+    padding-top: 10px;
+}
+footer p {
+font-family: 'JostM';
+margin: 10px;
+}
+footer *:first-child {
+    letter-spacing: 3px;
+    margin-bottom: 23px;
+}
